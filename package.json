@@ -1,20 +1,18 @@
 {
-  "name": "bitandbang",
-  "version": "1.3.0",
-  "description": "A personal card for Tierney Cyren (@bitandbang)",
-  "main": "/bin/card.js",
+  "name": "aarongarciah",
+  "version": "1.0.0",
+  "description": "A personal card for Aarón García Hervás (@aarongarciah)",
+  "main": "./bin/card.js",
   "bin": {
-    "bitandbang": "./bin/card.js"
+    "aarongarciah": "./bin/card.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bnb/bitandbang.git"
+    "url": "https://github.com/aarongarciah/npm-card.git"
   },
   "scripts": {
-    "prepublish": "npm run build",
-    "build": "node build.js",
-    "dev": "npm run build && node ./bin/card.js",
-    "lint": "standard",
+    "start": "node ./bin/card.js",
+    "dev": "npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -25,15 +23,10 @@
     "npx card",
     "business card"
   ],
-  "author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
+  "author": "Aarón García Hervás <aarongarciahervas@gmail.com> (https://aarongarciah.com)",
   "license": "MIT",
-  "files": [
-    "bin/card.js",
-    "bin/output"
-  ],
-  "devDependencies": {
+  "dependencies": {
     "boxen": "^2.1.0",
-    "chalk": "^2.4.1",
-    "standard": "^12.0.1"
+    "chalk": "^2.4.1"
   }
 }
